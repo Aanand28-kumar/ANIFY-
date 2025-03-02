@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Brand - Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with Logo, Navigation, and Search Bar -->
+    <header>
+        <div class="logo">
+            <h1>ANIFY</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#" id="shopLink">Shop</a></li>
+                <li><a href="#" id="aboutLink">About</a></li>
+                <li><a href="#" id="contactLink">Contact</a></li>
+                <li><a href="#" id="cartLink">Cart (0)</a></li>
+            </ul>
+        </nav>
+
+        <!-- Multilingual Dropdown -->
+        <div class="language-selector">
+            <select id="languageSelect" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+            </select>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchBar" placeholder="Search for products...">
+            <button onclick="searchProduct()">Search</button>
+        </div>
+    </header>
+
+    <!-- Main Section (Featured Products) -->
+    <section class="main">
+        <h2 id="featuredTitle">Our Featured Collection</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000014477965-White-WHITE-1000014477965_01-2100.jpg" alt="T-Shirt" height="200px" width="150px">
+                
+                <h3 id="product1Title">Classic White Shirt</h3>
+                <p id="product1Price">₹1999</p>
+                <button onclick="buyNow('Classic White Shirt', 1999)">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F41%2Fd4%2F41d4333d220a88fa7c8bdab5e543b977771266f9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]" alt="Jeans" height="200px" width="150px">
+                <h3 id="product2Title">Blue Jeans</h3>
+                <p id="product2Price">₹2999</p>
+                <button onclick="buyNow('Blue Jeans', 2999)">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000014461463-Blue-LIGHTBLUE-1000014461463_01-2100.jpg" alt="Jacket" height="200px" width="150px">
+                <h3 id="product3Title">Winter Jacket</h3>
+                <p id="product3Price">4599</p>
+                <button onclick="buyNow('Winter Jacket', 4599)">Buy Now</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Brand. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
